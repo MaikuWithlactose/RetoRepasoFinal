@@ -1,0 +1,49 @@
+// Función para imprimir los números impares hasta un número dado:
+
+
+function oddNumbers(num)
+ {
+    for (let i = 1; i <= num; i += 2) {
+      console.log(i);
+    }
+  }
+  
+
+
+  //Función para revertir un array sin utilizar el método reverse():
+
+  function myRevert<T>(myArr: T[]): T[]
+   {
+    const result: T[] = [];
+    for (let i = myArr.length - 1; i >= 0; i--) {
+      result.push(myArr[i]);
+    }
+    return result;
+  }
+   
+
+  //Función para imprimir si los colores de un array están en el arcoíris:
+
+  function isRainbow(colors)
+   {
+    const rainbowColors = ['rojo', 'naranja', 'amarillo', 'verde', 'azul', 'añil', 'violeta'];
+    colors.forEach(color => {
+      console.log(`${color} ${rainbowColors.includes(color) ? 'está' : 'no está'} en el arcoíris`);
+    });
+  }
+  
+
+
+
+  // Función para devolver la suma de la longitud de las palabras de un array:
+
+
+  function add(myWords)
+   {
+    let sum = 0;
+    myWords.forEach(word => {
+      sum += word.length;
+    });
+    return sum;
+  }
+  
